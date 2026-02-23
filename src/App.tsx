@@ -21,12 +21,10 @@ import { useForm, useFieldArray } from "react-hook-form";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-// Utility for Tailwind classes
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-// Types
 interface Experience {
   id: string;
   company: string;
@@ -1018,9 +1016,9 @@ export default function App() {
             position: absolute; 
             left: 0; 
             top: 0; 
-            width: 100%; 
+            width: 99%; 
             margin: 0; 
-            padding: 0;
+            padding: 15px;
             border: none;
             box-shadow: none;
           }
